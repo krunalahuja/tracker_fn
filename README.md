@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+Transaction Tracker is a full-stack web application that allows users to manage transactions efficiently. The backend is built using Flask and SQLAlchemy, while the frontend is developed with React. The application provides features such as adding, retrieving, deleting, and canceling transactions.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
 
-## Available Scripts
+Add Transactions: Users can add new transactions with details like date, time, amount, product name, price, and quantity.
 
-In the project directory, you can run:
+View Transactions: A paginated list of transactions is displayed in the frontend.
 
-### `npm start`
+Delete Transactions: Users can remove transactions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Cancel Transactions: Users can mark a transaction as canceled without deleting it.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+RESTful API: The backend exposes API endpoints for managing transactions.
 
-### `npm test`
+Cross-Origin Resource Sharing (CORS) Enabled: Allows frontend and backend communication.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Technologies Used
 
-### `npm run build`
+Backend:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Python (Flask, Flask-CORS, Flask-SQLAlchemy)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+SQLite (Database)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+REST API (CRUD operations)
 
-### `npm run eject`
+Frontend:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React (Hooks, State Management, Fetch API)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+CSS (Basic Styling)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Bootstrap (UI Components)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Tools & Deployment:
 
-## Learn More
+Git & GitHub (Version Control)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Postman (API Testing)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Node.js & npm (Package Management)
 
-### Code Splitting
+Virtual Environment (For Flask Dependencies)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Setup Instructions
 
-### Analyzing the Bundle Size
+1. Clone the Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+git clone https://github.com/your-username/transaction-tracker.git
+cd transaction-tracker
 
-### Making a Progressive Web App
+2. Backend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Install Dependencies
 
-### Advanced Configuration
+cd backend
+python -m venv venv
+source venv/bin/activate  # For macOS/Linux
+venv\Scripts\activate    # For Windows
+pip install -r requirements.txt
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Run Flask Server
 
-### Deployment
+python app.py
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The backend will run on http://127.0.0.1:5000/.
 
-### `npm run build` fails to minify
+3. Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Install Dependencies
+
+cd frontend
+npm install
+
+Run React App
